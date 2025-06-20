@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="BQCM">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Sunglass">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+  <title>BQCM</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1576359795');
+      });
+    }
+  </script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script type="text/javascript">window.flutterWebRenderer = "html";</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+
+
+<script>
+  //Replace with your config data
+    const firebaseConfig = {
+    apiKey: "AIzaSyCeVus2PtsPd8GiRB6t1MNtyX3KgaUoR_s",
+          authDomain: "qbcm-57265.firebaseapp.com",
+          projectId: "qbcm-57265",
+          storageBucket: "qbcm-57265.firebasestorage.app",
+          messagingSenderId: "406877534883",
+          appId: "1:406877534883:web:4c2f37ddda152346129d16",
+          measurementId: "G-L99LFH2S53"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
