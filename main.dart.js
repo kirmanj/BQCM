@@ -48566,9 +48566,12 @@ s.aC()},
 I(a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="assets/images/12.png",c="Password",b=t.w,a=A.b0(a2,e,b).w.a.a<600,a0=t.p,a1=A.b([],a0)
 if(!a)B.b.W(a1,A.b([A.pC(0,A.t8("assets/images/11.png",B.DP,e,500),e,e,0,e,e,e),A.pC(0,A.t8(d,B.dz,A.b0(a2,e,b).w.a.b*0.7,e),e,e,e,0,e,e)],a0))
 if(a)a1.push(A.pC(0,A.t8(d,B.dz,e,e),e,e,e,0,e,e))
-b=a?A.b0(a2,e,b).w.a.b*0.1:A.b0(a2,e,b).w.a.b*0.15
-s=a?16:32
-r=a?1/0:400
+s=a?A.b0(a2,e,b).w.a.b*0.1:A.b0(a2,e,b).w.a.b*0.15
+if(a)b=new A.Y(16,16,16,16)
+else{r=A.b0(a2,e,b).w.a.b*0.1
+b=A.b0(a2,e,b).w.a.a*0.35
+r=new A.Y(b,r,b,r)
+b=r}r=a?1/0:400
 q=A.ag(12)
 p=a?20:24
 o=a?120:150
@@ -48614,7 +48617,7 @@ m=f.CW
 l=!m?B.lv:B.iP
 m=m?B.a1:B.a3
 k.push(A.at(A.b([o,A.at(A.b([n,A.ax(l,m,e,a?16:18)],a0),B.l,B.i,B.k)],a0),B.l,B.aU,B.k))
-a1.push(A.pC(e,A.nA(new A.ac(new A.Y(s,s,s,s),new A.d4(new A.a8(0,r,0,1/0),A.c6(new A.ac(new A.Y(p,p,p,p),A.aF(k,B.cL,B.i,B.ad),e),8,e,new A.aS(q,B.o)),e),e),e,B.B,e,e,B.X),e,e,0,0,b,e))
+a1.push(A.pC(e,A.nA(new A.ac(b,new A.d4(new A.a8(0,r,0,1/0),A.c6(new A.ac(new A.Y(p,p,p,p),A.aF(k,B.cL,B.i,B.ad),e),8,e,new A.aS(q,B.o)),e),e),e,B.B,e,e,B.X),e,e,0,0,s,e))
 return A.i7(e,B.h,A.h4(B.bp,a1,B.t,B.bb,e),e,e,e)}}
 A.auj.prototype={
 $1(a){return this.a3C(a)},
